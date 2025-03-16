@@ -38,3 +38,15 @@
  
 
 ```
+
+-Once you've added your db config db config as listed above, go to the src folder from your terminal and execute `npx sequalize db:create`
+
+# DB Design
+-Airplane Table [Id, model_number, capacity, created_at, updated_at]
+-Flight [id , src_airport_id, dest_airport_id, departure_date, arrival_date, departure_time, arrival_time]
+-Airport[id , name, city_id, address]
+-city [id, name]
+
+-airplane ----1:N---> flights
+-city---1:N--->airport
+-Airport--N:1--->flights
