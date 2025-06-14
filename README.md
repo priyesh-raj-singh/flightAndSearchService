@@ -40,6 +40,10 @@
 ```
 
 -Once you've added your db config db config as listed above, go to the src folder from your terminal and execute `npx sequalize db:create`
+and then execute
+`npx sequelize db:migrate`
+
+```
 
 # DB Design
 -Airplane Table [Id, model_number, capacity, created_at, updated_at]
